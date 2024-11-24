@@ -5,7 +5,7 @@ from sklearn.metrics import mean_absolute_error
 import joblib
 
 # Load dataset
-data = pd.read_csv('data/housing.csv')
+data = pd.read_csv('https://raw.githubusercontent.com/Aiswariar/house-price-prediction-ml/main/data/Housing.csv')
 
 # Preprocess dataset
 data = data.select_dtypes(include=['number']).dropna()  # Use numeric columns and drop NaN
